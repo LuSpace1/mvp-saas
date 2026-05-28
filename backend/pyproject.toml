@@ -1,0 +1,32 @@
+[project]
+name = "mvp-saas-backend"
+version = "0.1.0"
+description = "MVP SaaS Gastronómico"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",                 # Framework web asíncrono.
+    "uvicorn[standard]>=0.32.0",        # Servidor ASGI.
+    "sqlalchemy>=2.0.0",                # ORM SQLAlchemy.
+    "alembic>=1.14.0",                  # Migraciones de base de datos.
+    "asyncpg>=0.30.0",                  # Driver asíncrono para PostgreSQL.
+    "pydantic>=2.0.0",                  # Validación de esquemas y JSONB.
+    "pydantic-settings>=2.0.0",         # Gestión de variables de entorno.
+    "python-jose[cryptography]>=3.3.0", # Creación y firma de JWT.
+    "passlib[bcrypt]>=1.7.4",           # Hado de contraseñas (seed.py).
+    "google-auth>=2.36.0",              # Verificación de tokens de Google.
+    "google-auth-oauthlib>=1.2.0",      # Flujo de autenticación híbrida.
+    "python-multipart>=0.0.12",         # Soporte para subida de logos y PDFs.
+    "boto3>=1.35.0",                    # Cliente S3 para Cloudflare R2.
+    "httpx>=0.28.0",                    # Peticiones asíncronas a API de traducción.
+    "python-dotenv>=1.0.0",             # Carga local de archivos .env.
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",                    # Framework de pruebas.
+    "httpx>=0.28.0",                    # Cliente para TestClient de FastAPI.
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
