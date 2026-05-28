@@ -49,7 +49,7 @@ Monolito multi-tenant: un solo backend + una sola base de datos PostgreSQL con a
 cd backend
 uv venv
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv sync
 uv run uvicorn app.main:app --reload
 
 # Frontend React
