@@ -8,7 +8,7 @@ Plataforma SaaS multi-tenant para la industria gastronómica local y nacional ch
 |------|-----------|
 | **Backend** | FastAPI + SQLAlchemy ORM (Python 3.13 + uv) |
 | **Frontend** | React 19 + Vite + TailwindCSS |
-| **Base de datos** | PostgreSQL (single instance, multi-tenant lógico) |
+| **Base de datos** | PostgreSQL (single instance, multi-tenant lógico) para deploy (SQLite para pruebas locales) |
 | **Auth** | JWT + Google OAuth 2.0 | A futuro se agregaran mas metodos de autenticacion.
 | **File Storage** | Cloudflare R2 (S3-compatible, zero egress) |
 | **i18n** | JSONB en PostgreSQL (es/en/pt) + react-i18next |
@@ -38,8 +38,8 @@ Monolito multi-tenant: un solo backend + una sola base de datos PostgreSQL con a
 
 - Python 3.13+
 - uv (gestor de proyectos Python)
-- Node.js 20+
-- PostgreSQL 16+
+- Node.js 20+ y pnpm 11+
+- PostgreSQL 16+ (y SQLite para pruebas locales)
 - Cuenta Cloudflare R2 (para almacenamiento de imágenes)
 
 ## Instalación
@@ -54,8 +54,8 @@ uv run uvicorn app.main:app --reload
 
 # Frontend React
 cd frontend
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ## Licencia
