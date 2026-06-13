@@ -21,7 +21,7 @@ dependencies = [
     "python-dotenv>=1.0.0",             # Carga local de archivos .env.
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "pytest>=8.0.0",                    # Framework de pruebas.
     "httpx>=0.28.0",                    # Cliente para TestClient de FastAPI.
