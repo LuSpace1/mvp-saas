@@ -18,10 +18,11 @@ ASYNC_SESSION_LOCAL = async_sessionmaker(
 )
 
 class Base(DeclarativeBase):
-    "Clase Base para"
+    "Clase Base para todos los modelos ORM"
     pass
 
 async def get_db():
+    "Obtener sesión de base de datos para inyección de dependencias."
     async with ASYNC_SESSION_LOCAL() as session:
         yield session
 
