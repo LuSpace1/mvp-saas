@@ -1,7 +1,11 @@
-import os
+"""Punto de entrada del backend.
+Levanta la aplicación FastAPI, configura CORS y monta los routers
+de la plataforma SaaS multi-tenant.
+"""
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv  #python-dotenv para cargar el .env
+from dotenv import load_dotenv
 
 load_dotenv()
 
