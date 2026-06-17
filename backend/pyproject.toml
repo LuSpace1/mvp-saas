@@ -25,7 +25,8 @@ dependencies = [
 dev = [
     "pytest>=8.0.0",                    # Framework de pruebas.
     "httpx>=0.28.0",                    # Cliente para TestClient de FastAPI.
-    "ruff>0.15.0"
+    "ruff>0.15.0",                      # Linter y formateador rápido.
+    "pylint>=4.0.0",                    # Linter adicional para análisis estático.
 ]
 
 [tool.ruff]
