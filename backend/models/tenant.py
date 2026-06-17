@@ -2,7 +2,7 @@
 
 from sqlalchemy import String, Boolean
 from sqlalchemy.dialects.postgresql import JSONB
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from database import Base
 
 class Tenant(Base):
@@ -17,3 +17,4 @@ class Tenant(Base):
     password_hash: Mapped[str] = mapped_column(String(255))
     must_change_password: Mapped[bool] = mapped_column(Boolean, default=True)
     enabled_modules: Mapped[dict] = mapped_column(JSONB, default=dict)
+    config: Mapped["TenantConfig"] = relationship(back_populates="tenant", cascade="all, delete-orphan")
