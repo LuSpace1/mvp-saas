@@ -1,6 +1,7 @@
 """Modelo ORM para la tabla tenants."""
 
-from sqlalchemy import String, Boolean, JSON
+from sqlalchemy import String, Boolean
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 from database import Base
 
@@ -15,4 +16,4 @@ class Tenant(Base):
     email: Mapped[str] = mapped_column(String(254), unique=True)
     password_hash: Mapped[str] = mapped_column(String(255))
     must_change_password: Mapped[bool] = mapped_column(Boolean, default=True)
-    enabled_modules: Mapped[dict] = mapped_column(JSON, default=list)
+    enabled_modules: Mapped[dict] = mapped_column(JSONB, default=dict)
