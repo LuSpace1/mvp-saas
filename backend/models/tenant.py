@@ -25,7 +25,7 @@ class Tenant(Base):
     email: Mapped[str] = mapped_column(String(254), unique=True)
     password_hash: Mapped[str] = mapped_column(String(255))
     must_change_password: Mapped[bool] = mapped_column(Boolean, default=True)
-    enabled_modules: Mapped[dict] = mapped_column(JSONB, default=dict)
+    enabled_modules: Mapped[list] = mapped_column(JSONB, default=lambda: ["menus"])
     status: Mapped[TenantStatus] = mapped_column(default=TenantStatus.TRIAL)
     config: Mapped["TenantConfig"] = relationship(
         back_populates="tenant", cascade="all, delete-orphan"
