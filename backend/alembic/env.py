@@ -16,11 +16,13 @@ if config.config_file_name is not None:
 
 target_metadata = Base.metadata
 
+
 def do_run_migrations(connection: Connection) -> None:
     """Configura el contexto de Alembic y ejecuta las migraciones."""
     context.configure(connection=connection, target_metadata=target_metadata)
     with context.begin_transaction():
         context.run_migrations()
+
 
 async def run_async_migrations() -> None:
     """Crea un engine asíncrono, conecta a PostgreSQL y ejecuta migraciones."""
@@ -33,8 +35,10 @@ async def run_async_migrations() -> None:
         await connection.run_sync(do_run_migrations)
     await connectable.dispose()
 
+
 def run_migrations_online() -> None:
     """Punto de entrada: ejecuta las migraciones en modo asíncrono."""
     asyncio.run(run_async_migrations())
+
 
 run_migrations_online()
