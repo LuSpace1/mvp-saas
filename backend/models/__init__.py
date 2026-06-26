@@ -1,5 +1,10 @@
 """Modelos ORM de la base de datos."""
 
-from .tenant import Tenant
+from .tenant import Tenant, TenantStatus
+from .tenant_config import TenantConfig
 
-__all__ = ["Tenant"]
+__all__ = [
+    "Tenant",
+    "TenantStatus",
+    "TenantConfig",
+]
