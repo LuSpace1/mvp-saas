@@ -11,7 +11,7 @@ class TenantStatus(str, enum.Enum):
     TRIAL = "trial"
     ACTIVE = "active"
     SUSPENDED = "suspended"
-    CANCELLED = "canceled"
+    CANCELLED = "cancelled"
 
 
 class Tenant(Base):
