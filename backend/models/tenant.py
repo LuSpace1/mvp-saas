@@ -1,10 +1,17 @@
 """Modelo ORM para la tabla tenants."""
 
+from __future__ import annotations
 import enum
+from typing import TYPE_CHECKING
 from sqlalchemy import String, Boolean
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from database import Base
+
+# TYPE_CHECKING solo es 'True' para el editor de código o linters (Ruff/etc).
+# Al ejecutar la app es 'False', lo que evita el error de "importación circular" (bucle infinito).
+if TYPE_CHECKING:
+    from models.tenant_config import TenantConfig
 
 
 class TenantStatus(str, enum.Enum):
