@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "products": "Templates",
+    "how_it_works": "How it works",
+    "plans": "Plans",
+    "login": "Log In",
+    "demo": "Get Demo"
+  },
+  "hero": {
+    "badge": "☕ For Businesses with Identity",
+    "title1": "Your digital menu",
+    "title_italic": "exactly",
+    "title2": "as you imagine it",
+    "desc": "Create a menu page that speaks for your business. Your colors, your products, your essence — Multiple Designs at your choice.",
+    "demo": "Get Demo",
+    "example": "See example",
+    "footnote": "✦ One Plan  ·  Multiple Options",
+    "preview": "Digital menu preview"
+  },
+  "benefits": {
+    "badge": "Benefits",
+    "title": "Everything you need to start",
+    "desc": "No complications. No code. Just you, your menu, and your customers.",
+    "items": [
+      {
+        "title": "Your brand, your colors",
+        "desc": "Customize your page's palette to perfectly match your venue's identity."
+      },
+      {
+        "title": "Easy product management",
+        "desc": "Add, edit or deactivate dishes in seconds. Organize by categories and keep your menu updated."
+      },
+      {
+        "title": "Stylish templates",
+        "desc": "Choose from carefully crafted designs. All adapt to your brand palette."
+      },
+      {
+        "title": "Mobile optimized",
+        "desc": "Your customers see the perfect menu from any device. Share it via QR or social networks."
+      }
+    ]
+  },
+  "showcase": {
+    "badge": "Templates",
+    "title": "Choose the perfect suit for your menu",
+    "desc": "Bored of a template? <br/> Change the look as you wish.",
+    "preview": "Digital Menu Preview — {{name}}"
+  },
+  "howItWorks": {
+    "badge": "How it works",
+    "title": "In 3 simple steps",
+    "desc": "From registration to your first customer scanning the QR.",
+    "items": [
+      {
+        "title": "Sign up",
+        "desc": "Create your account in seconds."
+      },
+      {
+        "title": "Customize",
+        "desc": "Add your logo and colors."
+      },
+      {
+        "title": "Upload dishes",
+        "desc": "And start sharing."
+      }
+    ]
+  },
+  "plans": {
+    "badge": "Plans",
+    "title": "Choose your growth pace",
+    "desc": "Start simple, scale when ready.",
+    "currency": "CLP per month",
+    "items": [
+      {
+        "badge": "Essential",
+        "name": "Starter",
+        "price": "20.000",
+        "cta": "Start for free",
+        "features": [
+          "Menu page",
+          "Color customization",
+          "3 available templates",
+          "Link and QR to share",
+          "Product management",
+          "First month trial",
+          "Simple order creation with QR"
+        ]
+      },
+      {
+        "badge": "Recommended",
+        "name": "Performative",
+        "price": "45.000",
+        "cta": "Get Started",
+        "features": [
+          "Everything in Starter",
+          "2 premium templates",
+          "QR order manager",
+          "Basic analytics",
+          "Priority support"
+        ]
+      },
+      {
+        "badge": "Business",
+        "name": "All-Star",
+        "price": "Custom Quote",
+        "cta": "In development",
+        "features": [
+          "Everything in Pro",
+          "Exclusive templates",
+          "and more"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "desc": "The gastronomic SaaS you need.",
+    "links": "Links",
+    "contact": "Contact",
+    "rights": "© 2026 MiniMenu. All rights reserved."
+  }
+}

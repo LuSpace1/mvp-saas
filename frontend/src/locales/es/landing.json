@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "products": "Plantillas",
+    "how_it_works": "Cómo funciona",
+    "plans": "Planes",
+    "login": "Iniciar Sesión",
+    "demo": "Obtener Demo"
+  },
+  "hero": {
+    "badge": "☕ Para Negocios con identidad",
+    "title1": "Tu menú digital",
+    "title_italic": "exactamente",
+    "title2": "como lo imaginas",
+    "desc": "Crea una página de menú que hable por tu negocio. Tus colores, tus productos, tu esencia — Multiples Diseños a tu eleccion.",
+    "demo": "Obtener Demo",
+    "example": "Ver ejemplo",
+    "footnote": "✦ Un Plan  ·  Multiples Opciones",
+    "preview": "Vista previa del menú digital"
+  },
+  "benefits": {
+    "badge": "Beneficios",
+    "title": "Todo lo que necesitas para empezar",
+    "desc": "Sin complicaciones. Sin código. Solo tú, tu menú y tus clientes.",
+    "items": [
+      {
+        "title": "Tu marca, tus colores",
+        "desc": "Personaliza la paleta de tu página para que combine perfecto con la identidad de tu local."
+      },
+      {
+        "title": "Gestión de productos fácil",
+        "desc": "Agrega, edita o desactiva platos en segundos. Organiza por categorías y mantén tu carta actualizada."
+      },
+      {
+        "title": "Templates con estilo",
+        "desc": "Elige entre diseños cuidadosamente elaborados. Todos se adaptan a tu paleta de marca."
+      },
+      {
+        "title": "Optimizado para móvil",
+        "desc": "Tus clientes ven el menú perfecto desde cualquier dispositivo. Compártelo por QR o redes."
+      }
+    ]
+  },
+  "showcase": {
+    "badge": "Plantillas",
+    "title": "Elige el traje perfecto para tu menú",
+    "desc": "¿Te aburrio un template? <br/> Cambia de imagen a tu gusto.",
+    "preview": "Vista Previa del Menú Digital — {{name}}"
+  },
+  "howItWorks": {
+    "badge": "Cómo funciona",
+    "title": "En 3 simples pasos",
+    "desc": "Desde el registro hasta tu primer cliente escaneando el QR.",
+    "items": [
+      {
+        "title": "Regístrate",
+        "desc": "Crea tu cuenta en segundos."
+      },
+      {
+        "title": "Personaliza",
+        "desc": "Añade tu logo y colores."
+      },
+      {
+        "title": "Sube tus platos",
+        "desc": "Y empieza a compartir."
+      }
+    ]
+  },
+  "plans": {
+    "badge": "Planes",
+    "title": "Elige tu ritmo de crecimiento",
+    "desc": "Empieza simple, escala cuando estes listo.",
+    "currency": "CLP por mes",
+    "items": [
+      {
+        "badge": "Esencial",
+        "name": "Starter",
+        "price": "20.000",
+        "cta": "Comenzar gratis",
+        "features": [
+          "Página de menú",
+          "Personalización de colores",
+          "3 templates disponibles",
+          "Link y QR para compartir",
+          "Gestion de productos",
+          "Primer mes de prueba",
+          "Creacion simple de comandas con QR"
+        ]
+      },
+      {
+        "badge": "Recomendado",
+        "name": "Performative",
+        "price": "45.000",
+        "cta": "Comenzar",
+        "features": [
+          "Todo lo del plan Starter",
+          "2 templates premium",
+          "Gestor de comandas con QR",
+          "Analíticas básicas",
+          "Soporte prioritario"
+        ]
+      },
+      {
+        "badge": "Business",
+        "name": "All-Star",
+        "price": "Cotizacion",
+        "cta": "En desarrollo",
+        "features": [
+          "Todo lo del plan Pro",
+          "Templates exclusivos",
+          "y mas"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "desc": "El SaaS gastronómico que necesitas.",
+    "links": "Enlaces",
+    "contact": "Contacto",
+    "rights": "© 2026 MiniMenu. Todos los derechos reservados."
+  }
+}
